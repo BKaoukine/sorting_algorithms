@@ -7,13 +7,15 @@
  */
 void bubble_sort(int *array, size_t size)
 {
+size_t i, j;
+
 if (!array || !size)
 return;
 
-for (int step = 0; step < size - 1; ++step)
+for (j = 0; j < size - 1; ++j)
 {
 
-for (int i = 0; i < size - step - 1; ++i)
+for (i = 0; i < size - j - 1; ++i)
 {
 
 if (array[i] > array[i + 1])
