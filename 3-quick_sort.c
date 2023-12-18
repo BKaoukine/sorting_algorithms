@@ -26,9 +26,11 @@ int pivot = array[high];
 size_t i = low, j;
 
 /* Iterate through the array */
-for (j = low; j < high; j++) {
+for (j = low; j < high; j++)
+{
 /* If the current element is smaller than or equal to the pivot */
-if (array[j] <= pivot) {
+if (array[j] <= pivot)
+{
 /* Swap and print the array after each swap */
 swap(&array[i], &array[j]);
 if (i != j)
